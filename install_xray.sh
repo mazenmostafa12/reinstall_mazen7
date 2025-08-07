@@ -35,8 +35,8 @@ cat <<EOF | sudo tee /etc/xray/config.json
         "tlsSettings": {
           "certificates": [
             {
-              "certificateFile": "/etc/letsencrypt/live/waledpro6.cfd/fullchain.pem",
-              "keyFile": "/etc/letsencrypt/live/waledpro6.cfd/privkey.pem"
+              "certificateFile": "/etc/letsencrypt/live/mazenaldeeb.com/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/mazenaldeeb.com/privkey.pem"
             }
           ],
           "minVersion": "TLSv1.2",
@@ -60,8 +60,8 @@ cat <<EOF | sudo tee /etc/xray/config.json
         "tlsSettings": {
           "certificates": [
             {
-              "certificateFile": "/etc/letsencrypt/live/waledpro6.cfd/fullchain.pem",
-              "keyFile": "/etc/letsencrypt/live/waledpro6.cfd/privkey.pem"
+              "certificateFile": "/etc/letsencrypt/live/mazenaldeeb.com/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/mazenaldeeb.com/privkey.pem"
             }
           ]
         }
@@ -84,8 +84,8 @@ cat <<EOF | sudo tee /etc/xray/config.json
         "tlsSettings": {
           "certificates": [
             {
-              "certificateFile": "/etc/letsencrypt/live/waledpro6.cfd/fullchain.pem",
-              "keyFile": "/etc/letsencrypt/live/waledpro6.cfd/privkey.pem"
+              "certificateFile": "/etc/letsencrypt/live/mazenaldeeb.com/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/mazenaldeeb.com/privkey.pem"
             }
           ]
         },
@@ -113,8 +113,8 @@ cat <<EOF | sudo tee /etc/xray/config.json
         "tlsSettings": {
           "certificates": [
             {
-              "certificateFile": "/etc/letsencrypt/live/waledpro6.cfd/fullchain.pem",
-              "keyFile": "/etc/letsencrypt/live/waledpro6.cfd/privkey.pem"
+              "certificateFile": "/etc/letsencrypt/live/mazenaldeeb.com/fullchain.pem",
+              "keyFile": "/etc/letsencrypt/live/mazenaldeeb.com/privkey.pem"
             }
           ]
         }
@@ -148,7 +148,7 @@ WantedBy=multi-user.target
 EOF
 
 echo "[+] Obtaining SSL certificate..."
-sudo certbot certonly --standalone -d waledpro6.cfd
+sudo certbot certonly --standalone -d mazenaldeeb.com
 
 echo "[+] Enabling required firewall ports..."
 sudo ufw allow 443/tcp
